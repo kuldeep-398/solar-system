@@ -1,0 +1,225 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://wallpapercave.com/wp/wp12670893.jpg");
+  background-size: cover;
+}
+
+.solar-system {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sun {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(203, 145, 79, 0.8);
+  background-image: url("./sun-png-5472.png");
+  background-size: cover;
+  border-radius: 90%;
+  z-index: 1;
+  animation: sunPulse 3s ease-in-out infinite alternate;
+}
+
+@keyframes sunPulse {
+  0% {
+    box-shadow: 0 0 40px #ffeb3b, 0 0 80px #ff9800;
+  }
+  100% {
+    box-shadow: 0 0 60px #ffeb3b, 0 0 120px #ff9800;
+  }
+}
+
+.orbit {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.planet-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+}
+
+/* Mercury */
+.orbit-1 {
+  width: 160px;
+  height: 160px;
+}
+.planet-container-1 {
+  width: 160px;
+  height: 120px;
+  animation: revolve 8s linear infinite;
+}
+.planet-1 {
+  width: 20px;
+  height: 20px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/2/24/Transparent_Mercury.png");
+  background-size: cover;
+  left: 152px;
+  margin-left: -2px;
+}
+
+/* Venus */
+.orbit-2 {
+  width: 200px;
+  height: 200px;
+}
+.planet-container-2 {
+  width: 200px;
+  height: 160px;
+  animation: revolve 12s linear infinite;
+}
+.planet-2 {
+  width: 25px;
+  height: 25px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Venus_globe_-_transparent_background.png/2048px-Venus_globe_-_transparent_background.png");
+  background-size: cover;
+  left: 188px;
+  margin-left: 0px;
+}
+
+/* Earth */
+.orbit-3 {
+  width: 260px;
+  height: 260px;
+}
+.planet-container-3 {
+  width: 260px;
+  height: 220px;
+  animation: revolve 16s linear infinite;
+}
+.planet-3 {
+  width: 27px;
+  height: 27px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png");
+  background-size: cover;
+  left: 246px;
+  margin-left: 2px;
+}
+
+/* Mars */
+.orbit-4 {
+  width: 320px;
+  height: 320px;
+}
+.planet-container-4 {
+  width: 320px;
+  height: 280px;
+  animation: revolve 24s linear infinite;
+}
+.planet-4 {
+  width: 15px;
+  height: 15px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/f/f5/3D_Mars.png");
+  background-size: cover;
+  left: 310px;
+  margin-left: 2px;
+}
+
+/* Jupiter */
+.orbit-5 {
+  width: 420px;
+  height: 420px;
+}
+.planet-container-5 {
+  width: 420px;
+  height: 380px;
+  animation: revolve 36s linear infinite;
+}
+.planet-5 {
+  width: 35px;
+  height: 35px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/e/e1/Jupiter_%28transparent%29.png");
+  background-size: cover;
+  left: 392px;
+  margin-left: 8px;
+}
+
+/* Saturn */
+.orbit-6 {
+  width: 520px;
+  height: 520px;
+}
+.planet-container-6 {
+  width: 520px;
+  height: 480px;
+  animation: revolve 48s linear infinite;
+}
+.planet-6 {
+  width: 45px;
+  height: 45px;
+  background: url("https://www.pngplay.com/wp-content/uploads/13/Saturn-PNG-Clipart-Background.png");
+  background-size: cover;
+  left: 496px;
+  margin-left: 2px;
+  position: relative;
+}
+
+/* Uranus */
+.orbit-7 {
+  width: 620px;
+  height: 620px;
+}
+.planet-container-7 {
+  width: 620px;
+  height: 580px;
+  animation: revolve 64s linear infinite;
+}
+.planet-7 {
+  width: 25px;
+  height: 25px;
+  background: url("https://png.pngtree.com/png-vector/20240123/ourmid/pngtree-uranus-planet-illustration-png-image_11466428.png");
+  background-size: cover;
+  left: 602px;
+  margin-left: 5px;
+}
+
+/* Neptune */
+.orbit-8 {
+  width: 720px;
+  height: 720px;
+}
+.planet-container-8 {
+  width: 720px;
+  height: 680px;
+  animation: revolve 80s linear infinite;
+}
+.planet-8 {
+  width: 25px;
+  height: 25px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/2/20/Neptune_cutout.png");
+  background-size: cover;
+  left: 704px;
+  margin-left: 4px;
+}
+
+@keyframes revolve {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

@@ -7,7 +7,6 @@
 body {
   background-image: url("https://wallpapercave.com/wp/wp12670893.jpg");
   background-size: cover;
-  background-position: center;
   overflow: hidden;
 }
 
@@ -29,10 +28,10 @@ body {
   background-size: cover;
   border-radius: 50%;
   z-index: 2;
-  animation: sunPulse 3s ease-in-out infinite alternate;
+  animation: sunShadow 3s ease-in-out infinite alternate;
 }
 
-@keyframes sunPulse {
+@keyframes sunShadow {
   0% {
     box-shadow: 0 0 1.5vw #ffeb3b, 0 0 3vw #ff9800;
   }
@@ -68,138 +67,138 @@ body {
 
 /* Mercury */
 .orbit-1 {
-  width: 20vw;
-  height: 20vw;
+  width: 14vw;
+  height: 14vw;
 }
 .planet-container-1 {
-  width: 20vw;
-  height: 20vw;
+  width: 14vw;
+  height: 14vw;
   animation: revolve 8s linear infinite;
 }
 .planet-1 {
-  width: 2vw;
-  height: 2vw;
+  width: 1.5vw;
+  height: 1.5vw;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/24/Transparent_Mercury.png");
-  left: 19vw;
+  left: 13.05vw;
 }
 
 /* Venus */
 .orbit-2 {
-  width: 26vw;
-  height: 26vw;
+  width: 18vw;
+  height: 18vw;
 }
 .planet-container-2 {
-  width: 26vw;
-  height: 26vw;
+  width: 18vw;
+  height: 18vw;
   animation: revolve 12s linear infinite;
 }
 .planet-2 {
-  width: 2.5vw;
-  height: 2.5vw;
+  width: 2vw;
+  height: 2vw;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Venus_globe_-_transparent_background.png/2048px-Venus_globe_-_transparent_background.png");
-  left: 24.5vw;
+  left: 16.75vw;
 }
 
 /* Earth */
 .orbit-3 {
-  width: 32vw;
-  height: 32vw;
+  width: 22vw;
+  height: 22vw;
 }
 .planet-container-3 {
-  width: 32vw;
-  height: 32vw;
+  width: 22vw;
+  height: 22vw;
   animation: revolve 16s linear infinite;
 }
 .planet-3 {
-  width: 3vw;
-  height: 3vw;
+  width: 2.2vw;
+  height: 2.2vw;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png");
-  left: 30.5vw;
+  left: 21vw;
 }
 
 /* Mars */
 .orbit-4 {
-  width: 38vw;
-  height: 38vw;
+  width: 26vw;
+  height: 26vw;
 }
 .planet-container-4 {
-  width: 38vw;
-  height: 38vw;
+  width: 26vw;
+  height: 26vw;
   animation: revolve 24s linear infinite;
 }
 .planet-4 {
-  width: 2vw;
-  height: 2vw;
+  width: 1.6vw;
+  height: 1.6vw;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f5/3D_Mars.png");
-  left: 37vw;
+  left: 25vw;
 }
 
 /* Jupiter */
 .orbit-5 {
-  width: 48vw;
-  height: 48vw;
+  width: 32vw;
+  height: 32vw;
 }
 .planet-container-5 {
-  width: 48vw;
-  height: 48vw;
+  width: 32vw;
+  height: 32vw;
   animation: revolve 36s linear infinite;
 }
 .planet-5 {
-  width: 4vw;
-  height: 4vw;
+  width: 3vw;
+  height: 3vw;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e1/Jupiter_%28transparent%29.png");
-  left: 45.5vw;
+  left: 30vw;
 }
 
 /* Saturn */
 .orbit-6 {
-  width: 58vw;
-  height: 58vw;
+  width: 38vw;
+  height: 38vw;
 }
 .planet-container-6 {
-  width: 58vw;
-  height: 58vw;
+  width: 38vw;
+  height: 38vw;
   animation: revolve 48s linear infinite;
 }
 .planet-6 {
-  width: 4.5vw;
-  height: 4.5vw;
+  width: 3.5vw;
+  height: 3.5vw;
   background-image: url("https://www.pngplay.com/wp-content/uploads/13/Saturn-PNG-Clipart-Background.png");
-  left: 55.5vw;
+  left: 36vw;
 }
 
 /* Uranus */
 .orbit-7 {
-  width: 68vw;
-  height: 68vw;
+  width: 44vw;
+  height: 44vw;
 }
 .planet-container-7 {
-  width: 68vw;
-  height: 68vw;
+  width: 44vw;
+  height: 44vw;
   animation: revolve 64s linear infinite;
 }
 .planet-7 {
-  width: 3vw;
-  height: 3vw;
+  width: 2.5vw;
+  height: 2.5vw;
   background-image: url("https://png.pngtree.com/png-vector/20240123/ourmid/pngtree-uranus-planet-illustration-png-image_11466428.png");
-  left: 66.5vw;
+  left: 42.5vw;
 }
 
 /* Neptune */
 .orbit-8 {
-  width: 78vw;
-  height: 78vw;
+  width: 50vw;
+  height: 50vw;
 }
 .planet-container-8 {
-  width: 78vw;
-  height: 78vw;
+  width: 50vw;
+  height: 50vw;
   animation: revolve 80s linear infinite;
 }
 .planet-8 {
-  width: 3vw;
-  height: 3vw;
+  width: 2.5vw;
+  height: 2.5vw;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/20/Neptune_cutout.png");
-  left: 76.5vw;
+  left: 48.75vw;
 }
 
 @keyframes revolve {
